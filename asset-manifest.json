@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/leon/static/css/main.8e81872e.css",
+    "main.css": "/leon/static/css/main.5bac224b.css",
     "main.js": "/leon/static/js/main.0d19388d.js",
     "static/media/leon-m-big.jpg": "/leon/static/media/leon-m-big.9299b4a3746963b0dd49.jpg",
     "index.html": "/leon/index.html",
-    "main.8e81872e.css.map": "/leon/static/css/main.8e81872e.css.map",
+    "main.5bac224b.css.map": "/leon/static/css/main.5bac224b.css.map",
     "main.0d19388d.js.map": "/leon/static/js/main.0d19388d.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e81872e.css",
+    "static/css/main.5bac224b.css",
     "static/js/main.0d19388d.js"
   ]
 }
