@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/leon/static/css/main.1929df29.css",
-    "main.js": "/leon/static/js/main.c65c65d5.js",
-    "static/media/leon2-m.jpg": "/leon/static/media/leon2-m.30213eb30090745c97e0.jpg",
+    "main.css": "/leon/static/css/main.7497ff5e.css",
+    "main.js": "/leon/static/js/main.503725e9.js",
+    "static/media/leon1-m.jpg": "/leon/static/media/leon1-m.30213eb30090745c97e0.jpg",
     "static/media/leon3-m.jpg": "/leon/static/media/leon3-m.d8b04b05448cfbf7c119.jpg",
-    "static/media/leon1-m.jpg": "/leon/static/media/leon1-m.95044c3d30e156dc8ed0.jpg",
+    "static/media/leon2-m.jpg": "/leon/static/media/leon2-m.95044c3d30e156dc8ed0.jpg",
     "index.html": "/leon/index.html",
-    "main.1929df29.css.map": "/leon/static/css/main.1929df29.css.map",
-    "main.c65c65d5.js.map": "/leon/static/js/main.c65c65d5.js.map"
+    "main.7497ff5e.css.map": "/leon/static/css/main.7497ff5e.css.map",
+    "main.503725e9.js.map": "/leon/static/js/main.503725e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.1929df29.css",
-    "static/js/main.c65c65d5.js"
+    "static/css/main.7497ff5e.css",
+    "static/js/main.503725e9.js"
   ]
 }
