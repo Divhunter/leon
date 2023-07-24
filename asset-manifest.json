@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/leon/static/css/main.a4247a05.css",
-    "main.js": "/leon/static/js/main.13af76b9.js",
-    "static/media/footerVDO.mp4": "/leon/static/media/footerVDO.94ef4b721905188b6715.mp4",
+    "main.js": "/leon/static/js/main.ea01e261.js",
+    "static/media/footerVDO.mp4": "/leon/static/media/footerVDO.8dfd5bb2dacdbb6c0393.mp4",
     "static/media/leon4-m.jpg": "/leon/static/media/leon4-m.73323d554501ad2578ff.jpg",
     "static/media/leon1-m.jpg": "/leon/static/media/leon1-m.30213eb30090745c97e0.jpg",
     "static/media/leon3-m.jpg": "/leon/static/media/leon3-m.d8b04b05448cfbf7c119.jpg",
@@ -14,10 +14,10 @@
     "static/media/logo.png": "/leon/static/media/logo.98fbe9745044e8c6d3db.png",
     "index.html": "/leon/index.html",
     "main.a4247a05.css.map": "/leon/static/css/main.a4247a05.css.map",
-    "main.13af76b9.js.map": "/leon/static/js/main.13af76b9.js.map"
+    "main.ea01e261.js.map": "/leon/static/js/main.ea01e261.js.map"
   },
   "entrypoints": [
     "static/css/main.a4247a05.css",
-    "static/js/main.13af76b9.js"
+    "static/js/main.ea01e261.js"
   ]
 }
