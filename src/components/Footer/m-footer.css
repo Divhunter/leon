@@ -22,7 +22,6 @@
 
 .footer__container-video__fellow-me {
     position: relative;
-    top: 10vw;
     margin-bottom: 20vw;
     font-size: 10vw;
     font-weight: 600;
@@ -35,7 +34,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     position: relative;
-    top: -10vw;
+    top: -15vw;
     left: 50%;
     transform: translate(-50%, 0);
     width: 75vw;
@@ -55,14 +54,32 @@
 .footer__container-video__link__icon:hover {
 	color: rgb(255, 200, 50);
     font-size: 15vw;
-    opacity: 1;
     transition: all .2s;
+}
+
+.footer__container-video__link2 {
+    position: absolute;
+    display: inline-block;
+    top: 34vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    color: white;
+    font-size: 7vw;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color .2s;
+}
+
+.footer__container-video__link2:hover {
+	color: rgb(255, 200, 50);
+    transition: color .2s;
 }
 
 .footer__container-video__logo {
     position: relative;
-	top: 40vw;
-    width: 25vw;
+	top: 47vw;
+    width: 20vw;
 	height: auto;
     cursor: pointer;
 }
@@ -70,26 +87,28 @@
 .footer__container-video__leon {
     position: relative;
     top: 37vw;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    padding-bottom: 5vw;
     font-size: 13vw;
     color: white;
     font-weight: 500;
-    letter-spacing: 2.5vw;
+    letter-spacing: 4vw;
 }
 
 .footer__container-video__text {
     position: relative;
-    top: 27vw;
-    font-size: 6vw;
+    top: 30vw;
+    font-size: 5vw;
     font-weight: 400;
     font-family: 'Open', sans-serif;
     color: white;
-    letter-spacing: .1vw;
+    letter-spacing: .3vw;
 }
 
 .footer__container-video__web {
     position: relative;
-    top: 22vw;
-    margin-bottom: 35vw;
+    top: 26vw;
+    margin-bottom: 33vw;
     font-size: 5vw;
     font-weight: 400;
     font-family: 'Open', sans-serif;
