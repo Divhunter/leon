@@ -12,7 +12,7 @@
 
 .footer__video {
     position: absolute;
-    filter: grayscale(1) brightness(80%)
+    filter: grayscale(0) brightness(70%)
 }
 
 .footer__container-video {
@@ -27,7 +27,6 @@
     font-size: 10vw;
     font-weight: 600;
     letter-spacing: .4vw;
-    /*color: rgb(231, 193, 66)*/;
     color: white;
 }
 
@@ -47,7 +46,6 @@
 
 .footer__container-video__link__icon {
 	position: relative;
-    /*color: rgb(231, 193, 66);*/
     color: white;
     font-size: 9vw;
     cursor: pointer;
@@ -55,7 +53,7 @@
 }
 
 .footer__container-video__link__icon:hover {
-	color: rgb(240, 136, 0);
+	color: rgb(255, 200, 50);
     font-size: 15vw;
     opacity: 1;
     transition: all .2s;
@@ -63,11 +61,40 @@
 
 .footer__container-video__logo {
     position: relative;
-    margin-bottom: 80vw;
 	top: 40vw;
     width: 25vw;
 	height: auto;
     cursor: pointer;
+}
+
+.footer__container-video__leon {
+    position: relative;
+    top: 37vw;
+    font-size: 13vw;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2.5vw;
+}
+
+.footer__container-video__text {
+    position: relative;
+    top: 27vw;
+    font-size: 6vw;
+    font-weight: 400;
+    font-family: 'Open', sans-serif;
+    color: white;
+    letter-spacing: .1vw;
+}
+
+.footer__container-video__web {
+    position: relative;
+    top: 22vw;
+    margin-bottom: 35vw;
+    font-size: 5vw;
+    font-weight: 400;
+    font-family: 'Open', sans-serif;
+    color: white;
+    letter-spacing: .3vw;
 }
 
 .footer__container-info {

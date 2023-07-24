@@ -21,7 +21,7 @@ const Footer = () => {
                 < Video />
             </div>
             <div className='footer__container-video'>
-                <h1 className='footer__container-video__fellow-me'>Suivez moi...</h1>
+                <h1 className='footer__container-video__fellow-me'>Suivez moi sur...</h1>
                 <div className='footer__container-video__link'>
                     <FontAwesomeIcon className='footer__container-video__link__icon icon-fb' icon={(fab, faFacebook)} />
                     <FontAwesomeIcon className='footer__container-video__link__icon icon-tw' icon={(fab, faTwitter)} />
@@ -32,6 +32,9 @@ const Footer = () => {
                 <Link to='header'>
                     <img className='footer__container-video__logo' src={logo} alt='logo-leon'/>
                 </Link>
+                <h2 className='footer__container-video__leon'>LEON</h2>
+                <h3 className='footer__container-video__text'>Artiste soul, funk & rnb</h3>
+                <p className='footer__container-video__web'>www.leonweb.com</p>
             </div>
 			<div className='footer__container-info'>
                 <article className='footer__container-info__content'>
@@ -41,9 +44,9 @@ const Footer = () => {
 							icon={faAt} 
 						/>
                         <p className='footer__container-info__li__text'>
-                            contact@leon-web.fr
+                            contact@leonweb.fr
                             <br/>
-                            leon-web@gmail.com
+                            leonweb@gmail.com
                         </p>
                     </div>
                     <div className='footer__container-info__li'>
@@ -63,7 +66,7 @@ const Footer = () => {
                             icon={faGlobe} 
                         />
                         <p className='footer__container-info__li__text'>
-                            https://www.leon-web.com/
+                            https://www.leonweb.com/
                             <br/>
                             https://www.facebook.com/leon-web/
                         </p>
