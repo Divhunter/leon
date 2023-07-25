@@ -30,7 +30,7 @@ const Footer = () => {
                     <FontAwesomeIcon className='footer__container-video__link__icon icon-yt' icon={(fab, faYoutube)} />
                 </div>
                 <Link to='/'>
-                    <p className='footer__container-video__link2'>notebook</p>
+                    <p className='footer__container-video__link2'>mon agenda</p>
                 </Link>
                 <Link to='header'>
                     <img className='footer__container-video__logo' src={logo} alt='logo-leon'/>
