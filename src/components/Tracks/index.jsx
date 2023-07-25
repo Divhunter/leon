@@ -1,5 +1,6 @@
 // images
 import vinyle from '../../assets/icons/vinyle.png'
+import chocolate from '../../assets/pictures/chocolate.jpg'
 
 // styles
 import './m-tracks.css'
@@ -18,7 +19,21 @@ const Tracks = () => {
                     Dominique Boulay - Blues Magazine (Fr) & Paris-Move 
                 </span>
             </header>
-            <p></p>
+            <div>
+                <article>
+                    <header>
+                        <div>
+                            <img src={chocolate} alt='chocolate'/>
+                        </div>
+                        <h1>Showman</h1>
+                        <h2>
+                            Léon Chocolate
+                            <br/>
+                            2012 - Vaziva Music
+                        </h2>
+                    </header>
+                </article>  
+            </div>
         </section>
 	) 
 }
