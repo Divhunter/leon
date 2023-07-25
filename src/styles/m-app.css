@@ -71,6 +71,16 @@ section>p, section>div{
     color: rgb(225, 225, 225);
 }
 
+section>div>header{
+    position: relative;
+    margin-bottom: 10vw;
+    text-align: center;
+    font-weight: 600;
+    font-size: 8vw;
+    letter-spacing: .4vw;
+    color: rgb(253, 215, 89);
+}
+
 section>div>article {
     position: relative;
     text-align: center;
@@ -114,6 +124,17 @@ section>div>article>header>h2 {
     top: -3.5vw;
     font-size: 5vw;
     font-weight: 600;
+    color: black;
+}
+
+section>div>article>header>p {
+    position: relative;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    top: -7.5vw;
+    font-size: 4.5vw;
+    font-weight: 500;
+    letter-spacing: normal;
     color: black;
 }
 

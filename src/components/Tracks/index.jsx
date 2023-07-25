@@ -20,6 +20,9 @@ const Tracks = () => {
                 </span>
             </header>
             <div>
+                <header>
+                    - Albums
+                </header>
                 <article>
                     <header>
                         <div>
@@ -30,7 +33,12 @@ const Tracks = () => {
                             Léon Chocolate
                             <br/>
                             2012 - Vaziva Music
+                            <br/>
+                            #Soul
                         </h2>
+                        <p>
+                            Classé coup de cœur Fnac dès sa sorite !
+                        </p>
                     </header>
                 </article>  
             </div>
