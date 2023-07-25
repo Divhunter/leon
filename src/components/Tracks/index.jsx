@@ -21,7 +21,7 @@ const Tracks = () => {
             </header>
             <div>
                 <header>
-                    - Albums
+                    - Albums -
                 </header>
                 <article>
                     <header>
@@ -30,17 +30,67 @@ const Tracks = () => {
                         </div>
                         <h1>Showman</h1>
                         <h2>
-                            Léon Chocolate
+                            Artiste : Léon Chocolate
                             <br/>
-                            2012 - Vaziva Music
+                            Label : Vaziva Music
                             <br/>
-                            #Soul
+                            Sortie : 2012
+                            <br/>
+                            Genre : #Soul
                         </h2>
                         <p>
                             Classé coup de cœur Fnac dès sa sorite !
                         </p>
                     </header>
                 </article>  
+
+                <header>
+                    - Singles -
+                </header>
+                <article>
+                    <header>
+                        <div>
+                            <img src={chocolate} alt='chocolate'/>
+                        </div>
+                        <h1>Selfie-moi ton monde</h1>
+                        <h2>
+                            Artiste : Léon Showman
+                            <br/>
+                            Label : JS Musik
+                            <br/>
+                            Sortie : 2019
+                            <br/>
+                            Genre : #Rnb
+                        </h2>
+                        <p>
+                            Comme un hommage à sa fille ...
+                        </p>
+                    </header>
+                </article> 
+
+                <header>
+                    - Divers -
+                </header>
+                <article>
+                    <header>
+                        <div>
+                            <img src={chocolate} alt='chocolate'/>
+                        </div>
+                        <h1>Showman</h1>
+                        <h2>
+                            Artiste : Léon Chocolate
+                            <br/>
+                            Label : Vaziva Music
+                            <br/>
+                            Sortie : 2012
+                            <br/>
+                            Genre : #Soul
+                        </h2>
+                        <p>
+                            Classé coup de cœur Fnac dès sa sorite !
+                        </p>
+                    </header>
+                </article>
             </div>
         </section>
 	) 

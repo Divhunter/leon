@@ -62,7 +62,9 @@ section>header>span {
 
 section>p, section>div{
     position: relative;
-    padding: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 15vw;
     text-align: left;
     font-weight: 300;
     font-size: 5vw;
@@ -73,16 +75,18 @@ section>p, section>div{
 
 section>div>header{
     position: relative;
-    margin-bottom: 10vw;
     text-align: center;
     font-weight: 600;
-    font-size: 8vw;
+    font-size: 7vw;
     letter-spacing: .4vw;
+    line-height: 30vw;
     color: rgb(253, 215, 89);
+
 }
 
 section>div>article {
     position: relative;
+    padding-bottom: 10vw;
     text-align: center;
     width: 100%;
     height: auto;
@@ -121,9 +125,10 @@ section>div>article>header>h1 {
 
 section>div>article>header>h2 {
     position: relative;
-    top: -3.5vw;
-    font-size: 5vw;
-    font-weight: 600;
+    text-align: left;
+    margin-left: 10vw;
+    font-size: 4.5vw;
+    font-weight: 500;
     color: black;
 }
 
@@ -131,9 +136,8 @@ section>div>article>header>p {
     position: relative;
     margin-left: 10vw;
     margin-right: 10vw;
-    top: -7.5vw;
     font-size: 4.5vw;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: normal;
     color: black;
 }
