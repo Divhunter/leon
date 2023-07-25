@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/leon/static/css/main.46016498.css",
+    "main.css": "/leon/static/css/main.5d779dde.css",
     "main.js": "/leon/static/js/main.55d069f5.js",
     "static/media/footerVDO.mp4": "/leon/static/media/footerVDO.520ec75c3fb3a96a9132.mp4",
     "static/media/leon4-m.jpg": "/leon/static/media/leon4-m.73323d554501ad2578ff.jpg",
@@ -13,11 +13,11 @@
     "static/media/phone.png": "/leon/static/media/phone.7aa1e16e5c2d35d485f1.png",
     "static/media/logo.png": "/leon/static/media/logo.98fbe9745044e8c6d3db.png",
     "index.html": "/leon/index.html",
-    "main.46016498.css.map": "/leon/static/css/main.46016498.css.map",
+    "main.5d779dde.css.map": "/leon/static/css/main.5d779dde.css.map",
     "main.55d069f5.js.map": "/leon/static/js/main.55d069f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.46016498.css",
+    "static/css/main.5d779dde.css",
     "static/js/main.55d069f5.js"
   ]
 }
