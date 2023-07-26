@@ -1,3 +1,7 @@
+// Hooks and dependencies
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 // images
 import vinyle from '../../assets/icons/vinyle.png'
 import chocolate from '../../assets/pictures/chocolate.jpg'
@@ -11,6 +15,17 @@ import './d-tracks.css'
 
 const Tracks = () => {
 
+const redirection = () => { 
+    window.location.replace('https://www.youtube.com/watch?v=B01sQ4XOzyw')
+}
+
+const redirection2 = () => { 
+    window.location.replace('https://www.youtube.com/watch?v=9HY0Fx2lmzI')
+}
+
+const redirection3 = () => { 
+    window.location.replace('https://www.youtube.com/watch?v=mE6cvsZZ54g')
+}
 	return (
 		<section id='tracks' className='tracks'>
             <header>
@@ -44,6 +59,10 @@ const Tracks = () => {
                         <p>
                             Classé coup de cœur Fnac dès sa sorite !
                         </p>
+                        <p className='bonus' onClick={redirection}>
+                            Extrait video
+                            <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
+                        </p>
                     </header>
                 </article>  
 
@@ -69,6 +88,10 @@ const Tracks = () => {
                         <p>
                             Un hommage à tous les papas du monde ...
                         </p>
+                        <p className='bonus' onClick={redirection2}>
+                            Extrait video
+                            <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
+                        </p>
                     </header>
                 </article> 
                 <br/><br/>
@@ -90,6 +113,10 @@ const Tracks = () => {
                         <p>
                             RIP Marvin G
                         </p>
+                        <p className='bonus' onClick={redirection3}>
+                            Extrait video
+                            <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
+                        </p>
                     </header>
                 </article>
                 <br/><br/> 
@@ -110,6 +137,10 @@ const Tracks = () => {
                         </h2>
                         <p>
                             Un pur son clubbing !
+                        </p>
+                        <p className='bonus'>
+                            Extrait video
+                            <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
                         </p>
                     </header>
                 </article> 
