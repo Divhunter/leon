@@ -36,7 +36,7 @@ const Footer = () => {
                     <img className='footer__container-video__logo' src={logo} alt='logo-leon'/>
                 </Link>
                 <h2 className='footer__container-video__leon'>LEON</h2>
-                <h3 className='footer__container-video__text'>#soul, #funk, #house, #rnb</h3>
+                <h3 className='footer__container-video__text'>#Soul, #Funk, #House, #Rnb</h3>
                 <p className='footer__container-video__web'>www.leonweb.com</p>
             </div>
 			<div className='footer__container-info'>
