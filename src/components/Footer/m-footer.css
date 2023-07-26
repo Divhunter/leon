@@ -12,7 +12,7 @@
 
 .footer__video {
     position: absolute;
-    filter: grayscale(0) brightness(70%)
+    filter: grayscale(0) brightness(80%)
 }
 
 .footer__container-video {
@@ -63,13 +63,18 @@
     top: 34vw;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 100%;
+    width: 56vw;
     color: white;
     font-size: 7vw;
     font-weight: 600;
     letter-spacing: .5vw;
     cursor: pointer;
     transition: color .2s;
+}
+
+.footer__container-video__link2__arrow {
+    margin-left: 3vw;
+    font-size: 5vw;
 }
 
 .footer__container-video__link2:hover {
@@ -91,8 +96,8 @@
     border-bottom: 1px solid rgba(255, 255, 255, .5);
     padding-bottom: 5vw;
     font-size: 13vw;
-    color: white;
-    font-weight: 500;
+    color: rgb(237, 179, 0);
+    font-weight: 600;
     letter-spacing: 4vw;
 }
 

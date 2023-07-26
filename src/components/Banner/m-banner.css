@@ -6,6 +6,7 @@
     height: 18vw;
     background: linear-gradient(to bottom, rgb(204, 118, 0), 30%, rgb(253, 215, 89));
     margin: 0;
+    z-index: 1000;
 }
 
 .banner__sep__stars {

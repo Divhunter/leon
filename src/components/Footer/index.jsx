@@ -1,7 +1,7 @@
 // Hooks and dependencies
 import { Link } from 'react-scroll'
 import {fab, faFacebook, faTwitter, faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faPhone, faAt, faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faPhone, faAt, faGlobe, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // images
@@ -30,7 +30,10 @@ const Footer = () => {
                     <FontAwesomeIcon className='footer__container-video__link__icon icon-yt' icon={(fab, faYoutube)} />
                 </div>
                 <Link to='/'>
-                    <p className='footer__container-video__link2'>mon agenda</p>
+                    <p className='footer__container-video__link2'>
+                        mon agenda
+                        <FontAwesomeIcon className='footer__container-video__link2__arrow' icon={(faArrowRight)} />
+                    </p>
                 </Link>
                 <Link to='header'>
                     <img className='footer__container-video__logo' src={logo} alt='logo-leon'/>
