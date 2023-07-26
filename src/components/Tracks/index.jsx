@@ -1,6 +1,9 @@
 // images
 import vinyle from '../../assets/icons/vinyle.png'
 import chocolate from '../../assets/pictures/chocolate.jpg'
+import selfie from '../../assets/pictures/selfie.jpg'
+import sexual from '../../assets/pictures/sexual.jpg'
+import wont from '../../assets/pictures/wont.jpg'
 
 // styles
 import './m-tracks.css'
@@ -47,10 +50,11 @@ const Tracks = () => {
                 <header>
                     - Singles -
                 </header>
+                
                 <article>
                     <header>
                         <div>
-                            <img src={chocolate} alt='chocolate'/>
+                            <img src={selfie} alt='selfie'/>
                         </div>
                         <h1>Selfie-moi ton monde</h1>
                         <h2>
@@ -63,7 +67,49 @@ const Tracks = () => {
                             Genre : #Rnb
                         </h2>
                         <p>
-                            Comme un hommage à sa fille ...
+                            Un hommage à tous les papas du monde ...
+                        </p>
+                    </header>
+                </article> 
+                <br/><br/>
+                <article>
+                    <header>
+                        <div>
+                            <img src={sexual} alt='sexual'/>
+                        </div>
+                        <h1>Sexual healing</h1>
+                        <h2>
+                            Artiste : Léon Showman
+                            <br/>
+                            Label : MTG Productions
+                            <br/>
+                            Sortie : 2018
+                            <br/>
+                            Genre : #Soul
+                        </h2>
+                        <p>
+                            RIP Marvin G
+                        </p>
+                    </header>
+                </article>
+                <br/><br/> 
+                <article>
+                    <header>
+                        <div>
+                            <img src={wont} alt='wont'/>
+                        </div>
+                        <h1>Won't let u down</h1>
+                        <h2>
+                            Artiste : Léon feat Aaron
+                            <br/>
+                            Label : XII BIS Records
+                            <br/>
+                            Sortie : 2012
+                            <br/>
+                            Genre : #House
+                        </h2>
+                        <p>
+                            Un pur son clubbing !
                         </p>
                     </header>
                 </article> 
