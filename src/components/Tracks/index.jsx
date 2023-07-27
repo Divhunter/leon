@@ -7,6 +7,7 @@ import vinyle from '../../assets/icons/vinyle.png'
 import chocolate from '../../assets/pictures/chocolate.jpg'
 import selfie from '../../assets/pictures/selfie.jpg'
 import sexual from '../../assets/pictures/sexual.jpg'
+import promise from '../../assets/pictures/promise.jpg'
 import wont from '../../assets/pictures/wont.jpg'
 
 // styles
@@ -25,6 +26,10 @@ const redirection2 = () => {
 
 const redirection3 = () => { 
     window.location.replace('https://www.youtube.com/watch?v=mE6cvsZZ54g')
+}
+
+const redirection4 = () => { 
+    window.location.replace('https://www.youtube.com/watch?v=AbCxmHTW-1w')
 }
 	return (
 		<section id='tracks' className='tracks'>
@@ -123,15 +128,40 @@ const redirection3 = () => {
                 <article>
                     <header>
                         <div>
+                            <img src={promise} alt='promise'/>
+                        </div>
+                        <h1>Promise of love</h1>
+                        <h2>
+                            Artiste : Léon Showman
+                            <br/>
+                            Label : VAZIVA Music
+                            <br/>
+                            Sortie : 2012
+                            <br/>
+                            Genre : #Soul
+                        </h2>
+                        <p>
+                            Léon tient toujours ses promesses
+                        </p>
+                        <p className='bonus' onClick={redirection4}>
+                            Extrait video
+                            <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
+                        </p>
+                    </header>
+                </article>
+                <br/><br/> 
+                <article>
+                    <header>
+                        <div>
                             <img src={wont} alt='wont'/>
                         </div>
                         <h1>Won't let u down</h1>
                         <h2>
                             Artiste : Léon feat Aaron
                             <br/>
-                            Label : XII BIS Records
+                            Label : XIII BIS Records
                             <br/>
-                            Sortie : 2012
+                            Sortie : 2011
                             <br/>
                             Genre : #House
                         </h2>
@@ -146,7 +176,7 @@ const redirection3 = () => {
                 </article> 
 
                 <header>
-                    - Divers -
+                    - Playlist -
                 </header>
                 <article>
                     <header>
