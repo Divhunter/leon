@@ -18,7 +18,7 @@ const Footer = () => {
 	return (
 		<footer className='footer'>
             <div className='footer__video'>
-                < Video />
+                < Video playsinline></Video>
             </div>
             <div className='footer__container-video'>
                 <h1 className='footer__container-video__fellow-me'>Suivez moi sur...</h1>
