@@ -22,7 +22,11 @@ import './m-wrapper.css'
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 const Wrapper = () => {
-	window.scrollTo(0,0)
+
+    window.onload = () => {
+        window.scrollTo(0,0)
+    }
+	//window.scrollTo(0,0)
 
 	const slideInTop = (elem, delay, duration) => {
         gsap.fromTo(

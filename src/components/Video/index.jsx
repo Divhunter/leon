@@ -7,7 +7,8 @@ const Video = () => {
 		<div className='vdo'>
 			<ReactPlayer 
                 url={computerVDO}
-                playing
+                playing={true} 
+                playsinline={true} 
                 muted
                 loop={true}
                 margin='auto'

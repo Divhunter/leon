@@ -108,7 +108,7 @@ const Header = () => {
 							Partenaires
 						</div>
 					</Link>
-					<Link to='contact' return='false'>
+					<Link to='contact'>
 						<div
 							className='header__navbar__menu__link header__navbar__menu__link-six'
 						>

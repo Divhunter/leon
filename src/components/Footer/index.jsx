@@ -18,7 +18,7 @@ const Footer = () => {
 	return (
 		<footer className='footer'>
             <div className='footer__video'>
-                < Video playsinline></Video>
+                < Video />
             </div>
             <div className='footer__container-video'>
                 <h1 className='footer__container-video__fellow-me'>Suivez moi sur...</h1>
@@ -61,8 +61,6 @@ const Footer = () => {
                             icon={faPhone} 
                         />
                         <p className='footer__container-info__li__text'>
-                            (+33) 427 115 913
-                            <br/>
                             (+33) 610 145 371
                         </p>
                     </div>
