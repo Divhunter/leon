@@ -17,23 +17,24 @@ import wont from '../../assets/pictures/wont.jpg'
 import './m-tracks.css'
 import './d-tracks.css'
 
-const Tracks = () => {
+const Tracks = ({audioElem, isPlaying, setIsPlaying, currentSong, onPlaying, setCurrentSong}) => {
 
-const redirection = () => { 
-    window.location.replace('https://www.youtube.com/watch?v=B01sQ4XOzyw')
-}
+    const redirection = () => { 
+        window.location.replace('https://www.youtube.com/watch?v=B01sQ4XOzyw')
+    }
 
-const redirection2 = () => { 
-    window.location.replace('https://www.youtube.com/watch?v=9HY0Fx2lmzI')
-}
+    const redirection2 = () => { 
+        window.location.replace('https://www.youtube.com/watch?v=9HY0Fx2lmzI')
+    }
 
-const redirection3 = () => { 
-    window.location.replace('https://www.youtube.com/watch?v=mE6cvsZZ54g')
-}
+    const redirection3 = () => { 
+        window.location.replace('https://www.youtube.com/watch?v=mE6cvsZZ54g')
+    }
 
-const redirection4 = () => { 
-    window.location.replace('https://www.youtube.com/watch?v=AbCxmHTW-1w')
-}
+    const redirection4 = () => { 
+        window.location.replace('https://www.youtube.com/watch?v=AbCxmHTW-1w')
+    }
+
 	return (
 		<section id='tracks' className='tracks'>
             <header>
@@ -175,7 +176,17 @@ const redirection4 = () => {
                             Extrait video
                             <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
                         </p>
-                        <Player />
+                        <div className='player-container'>
+                            <div className='title'>
+                                <p>- Won't let u down -</p>
+                            </div>
+                            <Player 
+                                isPlaying={isPlaying} 
+                                setIsPlaying={setIsPlaying}
+                                audioElem={audioElem}
+                                currentSong={currentSong}
+                            />
+                        </div>
                     </header>
                 </article> 
 

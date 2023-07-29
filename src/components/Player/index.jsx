@@ -43,17 +43,8 @@ const Player = () => {
     }
     
 	return (
-		<div 
-            className='player-container' 
-            isPlaying={isPlaying} 
-            setIsPlaying={setIsPlaying}
-            audioElem={audioElem}
-            currentSong={currentSong}
-        >
-			<audio src={wont} ref={audioElem} onTimeUpdate={onPlaying}/>
-            <div className='title'>
-                <p>Won't let u down</p>
-            </div>
+		<>
+            <audio src={wont} ref={audioElem} onTimeUpdate={onPlaying}/>
             <div className='navigation'>
                 <div 
                     className='navigation-wrapper' 
@@ -69,7 +60,7 @@ const Player = () => {
                     <BsFillPlayCircleFill className='btn_action pp' onClick={PlayPause} />
                 }
             </div>
-		</div>
+		</>
 	)
 }
  

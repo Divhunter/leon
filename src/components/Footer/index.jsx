@@ -51,8 +51,6 @@ const Footer = () => {
 						/>
                         <p className='footer__container-info__li__text'>
                             contact@leonweb.fr
-                            <br/>
-                            leonweb@gmail.com
                         </p>
                     </div>
                     <div className='footer__container-info__li'>
@@ -71,8 +69,6 @@ const Footer = () => {
                         />
                         <p className='footer__container-info__li__text'>
                             https://www.leonweb.com/
-                            <br/>
-                            https://www.facebook.com/leonweb/
                         </p>
                     </div>
                 </article>
