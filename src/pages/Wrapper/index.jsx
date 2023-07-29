@@ -26,7 +26,6 @@ const Wrapper = () => {
     window.onload = () => {
         window.scrollTo(0,0)
     }
-	//window.scrollTo(0,0)
 
 	const slideInTop = (elem, delay, duration) => {
         gsap.fromTo(

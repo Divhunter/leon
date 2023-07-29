@@ -15,8 +15,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 const Banner = () => {
 
 	const redirection = () => { 
-        window.location.replace('https://www.dailymotion.com/video/xsctk9')
-        return null
+        window.location.replace('https://www.youtube.com/watch?v=AbCxmHTW-1w')
     }
 
 	const titleRef = useRef()

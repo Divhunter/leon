@@ -2,6 +2,9 @@
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+// components
+import Player from '../Player'
+
 // images
 import vinyle from '../../assets/icons/vinyle.png'
 import chocolate from '../../assets/pictures/chocolate.jpg'
@@ -172,6 +175,7 @@ const redirection4 = () => {
                             Extrait video
                             <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
                         </p>
+                        <Player />
                     </header>
                 </article> 
 

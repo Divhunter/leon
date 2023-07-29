@@ -147,7 +147,7 @@ section>div>article>header>p {
 .bonus {
     position: relative;
     text-align: left;
-    width: 33vw;
+    width: 35vw;
     font-size: 4.5vw;
     font-weight: bold;
     color: rgb(204, 118, 0);
@@ -157,7 +157,7 @@ section>div>article>header>p {
 
 .bonus:hover {
     color: rgb(255, 149, 0);
-    transition: .5s;
+    transition: color .5s;
 }
 
 .bonus:active {
