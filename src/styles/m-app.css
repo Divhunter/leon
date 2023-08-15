@@ -23,6 +23,11 @@ section {
     url("https://www.transparenttextures.com/patterns/connected.png");
 }
 
+section>article {
+    position: relative;
+    margin-top: 20vw;
+}
+
 section>header {
     position: relative;
     text-align: center;

@@ -7,33 +7,74 @@ import Player from '../Player'
 
 // images
 import vinyle from '../../assets/icons/vinyle.png'
-import chocolate from '../../assets/pictures/chocolate.jpg'
-import selfie from '../../assets/pictures/selfie.jpg'
-import sexual from '../../assets/pictures/sexual.jpg'
-import promise from '../../assets/pictures/promise.jpg'
-import wont from '../../assets/pictures/wont.jpg'
+import chocolateImg from '../../assets/pictures/chocolate.jpg'
+import selfieImg from '../../assets/pictures/selfie.jpg'
+import sexualImg from '../../assets/pictures/sexual.jpg'
+import promiseImg from '../../assets/pictures/promise.jpg'
+import wontImg from '../../assets/pictures/wont.jpg'
 
 // styles
 import './m-tracks.css'
 import './d-tracks.css'
 
-const Tracks = ({audioElem, isPlaying, setIsPlaying, currentSong, onPlaying, setCurrentSong}) => {
+const Tracks = () => {
 
-    const redirection = () => { 
-        window.location.replace('https://www.youtube.com/watch?v=B01sQ4XOzyw')
-    }
+    const redirection1 = 'https://www.youtube.com/watch?v=B01sQ4XOzyw'
 
-    const redirection2 = () => { 
-        window.location.replace('https://www.youtube.com/watch?v=9HY0Fx2lmzI')
-    }
+    const redirection2 = 'https://www.youtube.com/watch?v=9HY0Fx2lmzI'
 
-    const redirection3 = () => { 
-        window.location.replace('https://www.youtube.com/watch?v=mE6cvsZZ54g')
-    }
+    const redirection3 = 'https://www.youtube.com/watch?v=mE6cvsZZ54g'
 
-    const redirection4 = () => { 
-        window.location.replace('https://www.youtube.com/watch?v=AbCxmHTW-1w')
-    }
+    const redirection4 = 'https://www.youtube.com/watch?v=AbCxmHTW-1w'
+
+    const singleArray = 
+
+    [
+        {	
+            "img": `${selfieImg}`,
+            "title": "Selfie-moi ton monde",
+            "artiste": "Léon Showman",
+            "label": "JS Musik",
+            "sortie": "2019",
+            "genre": "#Rnb",
+            "text": "Un hommage à tous les papas du monde ...",
+            "songTitle": "- Selfie moi ton monde -",
+            "redirection": `${redirection2}`
+        },
+        {	
+            "img": `${sexualImg}`,
+            "title": "Sexual healing",
+            "artiste": "Léon Showman",
+            "label": "MTG Productions",
+            "sortie": "2018",
+            "genre": "#Soul",
+            "text": "RIP Marvin G",
+            "songTitle": "- Sexual healing -",
+            "redirection": `${redirection3}`
+        },
+        {	
+            "img": `${promiseImg}`,
+            "title": "Promise of love",
+            "artiste": "Léon Showman",
+            "label": "VAZIVA Music",
+            "sortie": "2012",
+            "genre": "#Soul",
+            "text": "Léon tient toujours ses promesses",
+            "songTitle": "- Promise of love -",
+            "redirection": `${redirection4}`
+        },
+        {	
+            "img": `${wontImg}`,
+            "title": "Won't let u down",
+            "artiste": "Léon feat Aaron",
+            "label": "XIII BIS Records",
+            "sortie": "2011",
+            "genre": "#House",
+            "text": "Un pur son clubbing !",
+            "songTitle": "- Won't let u down -",
+            "redirection": ""
+        }
+    ]
 
 	return (
 		<section id='tracks' className='tracks'>
@@ -47,13 +88,15 @@ const Tracks = ({audioElem, isPlaying, setIsPlaying, currentSong, onPlaying, set
                 </span>
             </header>
             <div>
+                <br/>
                 <header>
                     - Albums -
                 </header>
+                <br/>
                 <article>
                     <header>
                         <div>
-                            <img src={chocolate} alt='chocolate'/>
+                            <img src={chocolateImg} alt='chocolate'/>
                         </div>
                         <h1>Showman</h1>
                         <h2>
@@ -68,135 +111,62 @@ const Tracks = ({audioElem, isPlaying, setIsPlaying, currentSong, onPlaying, set
                         <p>
                             Classé coup de cœur Fnac dès sa sorite !
                         </p>
-                        <p className='bonus' onClick={redirection}>
+                        <a className='bonus' href={redirection1}>
                             Extrait video
                             <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
-                        </p>
+                        </a>
                     </header>
                 </article>  
-
+                <br/>
                 <header>
                     - Singles -
                 </header>
                 
-                <article>
-                    <header>
-                        <div>
-                            <img src={selfie} alt='selfie'/>
-                        </div>
-                        <h1>Selfie-moi ton monde</h1>
-                        <h2>
-                            Artiste : Léon Showman
+                    {singleArray.map((items, index) => (
+                        <>
                             <br/>
-                            Label : JS Musik
+                            <article key={index}>
+                                <header>
+                                    <div>
+                                        <img src={items.img} alt={`pochette-single-${items.img}`}/>
+                                    </div>
+                                    <h1>{items.title}</h1>
+                                    <h2>
+                                        Artiste : {items.artiste}
+                                        <br/>
+                                        Label : {items.label}
+                                        <br/>
+                                        Sortie : {items.sortie}
+                                        <br/>
+                                        Genre : {items.genre}
+                                    </h2>
+                                    <p>
+                                        {items.text}
+                                    </p>
+                                    <a className='bonus' href={items.redirection}>
+                                        Extrait video
+                                        <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
+                                    </a>
+                                    <div className='player-container'>
+                                        <div className='title'>
+                                            <p>{items.songTitle}</p>
+                                        </div>
+                                        <Player />
+                                    </div>
+                                </header>
+                            </article>
                             <br/>
-                            Sortie : 2019
-                            <br/>
-                            Genre : #Rnb
-                        </h2>
-                        <p>
-                            Un hommage à tous les papas du monde ...
-                        </p>
-                        <p className='bonus' onClick={redirection2}>
-                            Extrait video
-                            <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
-                        </p>
-                    </header>
-                </article> 
-                <br/><br/>
-                <article>
-                    <header>
-                        <div>
-                            <img src={sexual} alt='sexual'/>
-                        </div>
-                        <h1>Sexual healing</h1>
-                        <h2>
-                            Artiste : Léon Showman
-                            <br/>
-                            Label : MTG Productions
-                            <br/>
-                            Sortie : 2018
-                            <br/>
-                            Genre : #Soul
-                        </h2>
-                        <p>
-                            RIP Marvin G
-                        </p>
-                        <p className='bonus' onClick={redirection3}>
-                            Extrait video
-                            <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
-                        </p>
-                    </header>
-                </article>
-                <br/><br/> 
-                <article>
-                    <header>
-                        <div>
-                            <img src={promise} alt='promise'/>
-                        </div>
-                        <h1>Promise of love</h1>
-                        <h2>
-                            Artiste : Léon Showman
-                            <br/>
-                            Label : VAZIVA Music
-                            <br/>
-                            Sortie : 2012
-                            <br/>
-                            Genre : #Soul
-                        </h2>
-                        <p>
-                            Léon tient toujours ses promesses
-                        </p>
-                        <p className='bonus' onClick={redirection4}>
-                            Extrait video
-                            <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
-                        </p>
-                    </header>
-                </article>
-                <br/><br/> 
-                <article>
-                    <header>
-                        <div>
-                            <img src={wont} alt='wont'/>
-                        </div>
-                        <h1>Won't let u down</h1>
-                        <h2>
-                            Artiste : Léon feat Aaron
-                            <br/>
-                            Label : XIII BIS Records
-                            <br/>
-                            Sortie : 2011
-                            <br/>
-                            Genre : #House
-                        </h2>
-                        <p>
-                            Un pur son clubbing !
-                        </p>
-                        <p className='bonus'>
-                            Extrait video
-                            <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
-                        </p>
-                        <div className='player-container'>
-                            <div className='title'>
-                                <p>- Won't let u down -</p>
-                            </div>
-                            <Player 
-                                isPlaying={isPlaying} 
-                                setIsPlaying={setIsPlaying}
-                                audioElem={audioElem}
-                                currentSong={currentSong}
-                            />
-                        </div>
-                    </header>
-                </article> 
+                        </>
+                    ))}
 
                 <header>
                     - Playlist -
                 </header>
+                <br/>
                 <article>
                     <header>
                         <div>
-                            <img src={chocolate} alt='chocolate'/>
+                            <img src={chocolateImg} alt='chocolate'/>
                         </div>
                         <h1>Showman</h1>
                         <h2>

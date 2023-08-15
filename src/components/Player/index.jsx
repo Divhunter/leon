@@ -1,9 +1,12 @@
 // Hooks and dependencies
-import { useState, useRef, useEffect } from 'react'
+import { useRef, useEffect, useState } from 'react'
 import { BsFillPlayCircleFill, BsFillPauseCircleFill } from 'react-icons/bs'
 
 // Songs
-import wont from '../../assets/songs/wont.mp3'
+import wontLetSong from '../../assets/songs/wont.mp3'
+import selfieSong from '../../assets/songs/selfie.mp3'
+import sexualSong from '../../assets/songs/sexual.mp3'
+import promiseSong from '../../assets/songs/promise.mp3'
 
 // styles
 import './m-player.css'
@@ -11,12 +14,43 @@ import './d-player.css'
 
 const Player = () => {
 
+
     const [ isPlaying, setIsPlaying ] = useState(false)
-    const [ currentSong,  setCurrentSong ] = useState({wont})
-    const audioElem = useRef()
+
+    const [ currentSong, setCurrentSong ] = useState(false)
+
     const clickRef = useRef()
+
+    const audioElem = useRef()
+
+    const songsArray = 
+
+    [
+        {	
+            "urlSong": `${selfieSong}`
+        },
+        {	
+            "urlSong": `${sexualSong}`
+        },
+        {	
+            "urlSong": `${promiseSong}`
+        },
+        {	
+            "urlSong": `${wontLetSong}`
+        }
+    ]
+
     const PlayPause = () => {
         setIsPlaying(!isPlaying)
+    }
+
+    const onPlaying = () => {
+        
+        const duration = audioElem.current.duration
+
+        const ct = audioElem.current.currentTime
+
+        setCurrentSong({ ...currentSong, 'progress': ct / duration * 100, 'length': duration })
     }
 
     useEffect(() => {
@@ -26,25 +60,26 @@ const Player = () => {
         else {
             audioElem.current.pause()
         }
-    }, [isPlaying])
-
-    const onPlaying = () => {
-        const duration = audioElem.current.duration
-        const ct = audioElem.current.currentTime
-
-        setCurrentSong({ ...currentSong, 'progress': ct / duration * 100, 'length': duration })
-    }
+    }, [isPlaying, audioElem])
 
     const checkWidth = (e) => {
         let width = clickRef.current.clientWidth
         const offset = e.nativeEvent.offsetX
-        const divprogress = offset / width * 100;
+        const divprogress = offset / width * 100
         audioElem.current.currentTime = divprogress / 100 * currentSong.length
     }
     
 	return (
-		<>
-            <audio src={wont} ref={audioElem} onTimeUpdate={onPlaying}/>
+        <>  
+            {songsArray.map((items, index) => (
+                <audio 
+                    key={index}
+                    src={items.urlSong}
+                    ref={audioElem}
+                    onTimeUpdate={onPlaying}
+                >
+                </audio>
+            ))}
             <div className='navigation'>
                 <div 
                     className='navigation-wrapper' 
