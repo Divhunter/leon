@@ -51,4 +51,5 @@
 .audioPlayer {
     width: 100%;
     border-radius: 2vw;
+    filter: sepia(100%);
 }

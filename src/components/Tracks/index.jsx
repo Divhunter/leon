@@ -160,7 +160,6 @@ const Tracks = () => {
                                     <ReactAudioPlayer 
                                         className='audioPlayer'
                                         src={items.urlSong}
-                                        autoPlay
                                         controls
                                     />
                                 </div>
