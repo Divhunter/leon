@@ -149,31 +149,6 @@ section>div>article>header>p {
     color: black;
 }
 
-.bonus {
-    position: relative;
-    text-align: left;
-    width: 35vw;
-    font-size: 4.5vw;
-    font-weight: bold;
-    color: rgb(204, 118, 0);
-    cursor: pointer;
-    transition: color .5s;
-}
-
-.bonus:hover {
-    color: rgb(255, 149, 0);
-    transition: color .5s;
-}
-
-.bonus:active {
-    color: white;
-}
-
-.bonus__arrow {
-    font-size: 4vw;
-    margin-left: 1.5vw;
-}
-
 ul, li {
     list-style:none;
     margin-top: 0;
@@ -201,4 +176,9 @@ textarea {
     -moz-box-shadow: none;
     box-shadow: none;
     resize: none;
+}
+
+.test {
+    color:black;
+    font-size: 5vw;
 }

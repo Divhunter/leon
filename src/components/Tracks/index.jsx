@@ -1,9 +1,7 @@
 // Hooks and dependencies
+import ReactAudioPlayer from 'react-audio-player'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-// components
-import Player from '../Player'
 
 // images
 import vinyle from '../../assets/icons/vinyle.png'
@@ -12,6 +10,12 @@ import selfieImg from '../../assets/pictures/selfie.jpg'
 import sexualImg from '../../assets/pictures/sexual.jpg'
 import promiseImg from '../../assets/pictures/promise.jpg'
 import wontImg from '../../assets/pictures/wont.jpg'
+
+// Songs
+import wontLetSong from '../../assets/songs/wont.mp3'
+import selfieSong from '../../assets/songs/selfie.mp3'
+import sexualSong from '../../assets/songs/sexual.mp3'
+import promiseSong from '../../assets/songs/promise.mp3'
 
 // styles
 import './m-tracks.css'
@@ -39,7 +43,8 @@ const Tracks = () => {
             "genre": "#Rnb",
             "text": "Un hommage à tous les papas du monde ...",
             "songTitle": "- Selfie moi ton monde -",
-            "redirection": `${redirection2}`
+            "redirection": `${redirection2}`,
+            "urlSong": `${selfieSong}`
         },
         {	
             "img": `${sexualImg}`,
@@ -50,7 +55,8 @@ const Tracks = () => {
             "genre": "#Soul",
             "text": "RIP Marvin G",
             "songTitle": "- Sexual healing -",
-            "redirection": `${redirection3}`
+            "redirection": `${redirection3}`,
+            "urlSong": `${sexualSong}`
         },
         {	
             "img": `${promiseImg}`,
@@ -61,7 +67,8 @@ const Tracks = () => {
             "genre": "#Soul",
             "text": "Léon tient toujours ses promesses",
             "songTitle": "- Promise of love -",
-            "redirection": `${redirection4}`
+            "redirection": `${redirection4}`,
+            "urlSong": `${promiseSong}`
         },
         {	
             "img": `${wontImg}`,
@@ -72,7 +79,8 @@ const Tracks = () => {
             "genre": "#House",
             "text": "Un pur son clubbing !",
             "songTitle": "- Won't let u down -",
-            "redirection": ""
+            "redirection": "",
+            "urlSong": `${wontLetSong}`
         }
     ]
 
@@ -123,42 +131,43 @@ const Tracks = () => {
                 </header>
                 
                     {singleArray.map((items, index) => (
-                        <>
-                            <br/>
-                            <article key={index}>
-                                <header>
-                                    <div>
-                                        <img src={items.img} alt={`pochette-single-${items.img}`}/>
+                        <article key={index} className='single-blocs'>
+                            <header>
+                                <div>
+                                    <img src={items.img} alt={`pochette-single-${items.img}`}/>
+                                </div>
+                                <h1>{items.title}</h1>
+                                <h2>
+                                    Artiste : {items.artiste}
+                                    <br/>
+                                    Label : {items.label}
+                                    <br/>
+                                    Sortie : {items.sortie}
+                                    <br/>
+                                    Genre : {items.genre}
+                                </h2>
+                                <p>
+                                    {items.text}
+                                </p>
+                                <a className='bonus' href={items.redirection}>
+                                    Extrait video
+                                    <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
+                                </a>
+                                <div className='player-container'>
+                                    <div className='title'>
+                                        <p>{items.songTitle}</p>
                                     </div>
-                                    <h1>{items.title}</h1>
-                                    <h2>
-                                        Artiste : {items.artiste}
-                                        <br/>
-                                        Label : {items.label}
-                                        <br/>
-                                        Sortie : {items.sortie}
-                                        <br/>
-                                        Genre : {items.genre}
-                                    </h2>
-                                    <p>
-                                        {items.text}
-                                    </p>
-                                    <a className='bonus' href={items.redirection}>
-                                        Extrait video
-                                        <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
-                                    </a>
-                                    <div className='player-container'>
-                                        <div className='title'>
-                                            <p>{items.songTitle}</p>
-                                        </div>
-                                        <Player />
-                                    </div>
-                                </header>
-                            </article>
-                            <br/>
-                        </>
+                                    <ReactAudioPlayer 
+                                        className='audioPlayer'
+                                        src={items.urlSong}
+                                        autoPlay
+                                        controls
+                                    />
+                                </div>
+                            </header>
+                        </article>
                     ))}
-
+                <br/>
                 <header>
                     - Playlist -
                 </header>
