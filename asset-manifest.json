@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/leon/static/css/main.8ec306d0.css",
-    "main.js": "/leon/static/js/main.1a141b0a.js",
+    "main.css": "/leon/static/css/main.859b1151.css",
+    "main.js": "/leon/static/js/main.bed7c583.js",
     "static/media/footerVDO.mp4": "/leon/static/media/footerVDO.bb60ebac728080541f3f.mp4",
     "static/media/sexual.mp3": "/leon/static/media/sexual.50ad5d19349debf6680a.mp3",
     "static/media/selfie.mp3": "/leon/static/media/selfie.e454c82901138d5272a8.mp3",
+    "static/media/playlist.mp4": "/leon/static/media/playlist.520c872f0fce3a760922.mp4",
     "static/media/promise.mp3": "/leon/static/media/promise.ceec1ad5c108d7bf2b0c.mp3",
     "static/media/wont.mp3": "/leon/static/media/wont.2c7288929a2d95947f58.mp3",
     "static/media/leon4-m.jpg": "/leon/static/media/leon4-m.73323d554501ad2578ff.jpg",
@@ -22,11 +23,11 @@
     "static/media/phone.png": "/leon/static/media/phone.7aa1e16e5c2d35d485f1.png",
     "static/media/logo.png": "/leon/static/media/logo.98fbe9745044e8c6d3db.png",
     "index.html": "/leon/index.html",
-    "main.8ec306d0.css.map": "/leon/static/css/main.8ec306d0.css.map",
-    "main.1a141b0a.js.map": "/leon/static/js/main.1a141b0a.js.map"
+    "main.859b1151.css.map": "/leon/static/css/main.859b1151.css.map",
+    "main.bed7c583.js.map": "/leon/static/js/main.bed7c583.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ec306d0.css",
-    "static/js/main.1a141b0a.js"
+    "static/css/main.859b1151.css",
+    "static/js/main.bed7c583.js"
   ]
 }
