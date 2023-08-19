@@ -1,5 +1,6 @@
 // Hooks and dependencies
 import ReactAudioPlayer from 'react-audio-player'
+import ReactPlayer from 'react-player'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -16,6 +17,9 @@ import wontLetSong from '../../assets/songs/wont.mp3'
 import selfieSong from '../../assets/songs/selfie.mp3'
 import sexualSong from '../../assets/songs/sexual.mp3'
 import promiseSong from '../../assets/songs/promise.mp3'
+
+// video
+import playlistVDO from '../../assets/video/playlist.mp4'
 
 // styles
 import './m-tracks.css'
@@ -173,10 +177,19 @@ const Tracks = () => {
                 <br/>
                 <article>
                     <header>
-                        <div>
-                            <img src={chocolateImg} alt='chocolate'/>
+                        <div className='containerVDO'>
+                            <ReactPlayer 
+                                url={playlistVDO}
+                                playing={true} 
+                                playsinline={true} 
+                                muted
+                                loop={true}
+                                margin='auto'
+                                width='100%'
+                                height='auto'
+                            />
                         </div>
-                        <h1>Showman</h1>
+                        <h1>Une journée/ soirée avec Léon</h1>
                         <h2>
                             Artiste : Léon Chocolate
                             <br/>

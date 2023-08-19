@@ -122,10 +122,13 @@ section>div>article>header>div>img {
 
 section>div>article>header>h1 {
     text-align: center;
+    margin-left: 8vw;
+    margin-right: 8vw;
     font-family: 'Open', sans-serif;
-    font-size: 8vw;
+    font-size: 6.5vw;
     font-weight: 500;
     line-height: 9vw;
+    letter-spacing: normal;
     color: black;
 }
 

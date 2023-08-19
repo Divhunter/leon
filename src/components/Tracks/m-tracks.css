@@ -53,3 +53,7 @@
     border-radius: 2vw;
     filter: sepia(100%);
 }
+
+.containerVDO{
+    height: 32vw;
+}
