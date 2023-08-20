@@ -11,15 +11,17 @@ import selfieImg from '../../assets/pictures/selfie.jpg'
 import sexualImg from '../../assets/pictures/sexual.jpg'
 import promiseImg from '../../assets/pictures/promise.jpg'
 import wontImg from '../../assets/pictures/wont.jpg'
+import giveItUpImg from '../../assets/pictures/giveItUp.jpg'
 
 // Songs
 import wontLetSong from '../../assets/songs/wont.mp3'
 import selfieSong from '../../assets/songs/selfie.mp3'
 import sexualSong from '../../assets/songs/sexual.mp3'
 import promiseSong from '../../assets/songs/promise.mp3'
+import giveItUpSong from '../../assets/songs/giveItUp.mp3'
 
 // video
-import playlistVDO from '../../assets/video/playlist.mp4'
+import playlistVDO from '../../assets/video/playlist2.mp4'
 
 // styles
 import './m-tracks.css'
@@ -34,6 +36,8 @@ const Tracks = () => {
     const redirection3 = 'https://www.youtube.com/watch?v=mE6cvsZZ54g'
 
     const redirection4 = 'https://www.youtube.com/watch?v=AbCxmHTW-1w'
+
+    const redirection5 = 'https://www.youtube.com/watch?v=L3uleem2eoQ'
 
     const singleArray = 
 
@@ -67,12 +71,23 @@ const Tracks = () => {
             "title": "Promise of love",
             "artiste": "Léon Showman",
             "label": "VAZIVA Music",
-            "sortie": "2012",
+            "sortie": "2011",
             "genre": "#Soul",
             "text": "Léon tient toujours ses promesses",
             "songTitle": "- Promise of love -",
             "redirection": `${redirection4}`,
             "urlSong": `${promiseSong}`
+        },
+        {	
+            "img": `${giveItUpImg}`,
+            "title": "Give it up",
+            "artiste": "Léon feat Loretta",
+            "label": "VAZIVA Music",
+            "sortie": "2011",
+            "genre": "#Soul",
+            "text": "Un duo explosif!",
+            "songTitle": "- Give it up -",
+            "urlSong": `${giveItUpSong}`
         },
         {	
             "img": `${wontImg}`,
@@ -83,7 +98,6 @@ const Tracks = () => {
             "genre": "#House",
             "text": "Un pur son clubbing !",
             "songTitle": "- Won't let u down -",
-            "redirection": "",
             "urlSong": `${wontLetSong}`
         }
     ]
@@ -199,9 +213,10 @@ const Tracks = () => {
                             <br/>
                             Genre : #Soul
                         </h2>
-                        <p>
-                            Classé coup de cœur Fnac dès sa sorite !
-                        </p>
+                        <a className='bonus' href={redirection5}>
+                            Extrait video
+                            <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
+                        </a>
                     </header>
                 </article>
             </div>
