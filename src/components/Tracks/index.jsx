@@ -205,14 +205,14 @@ const Tracks = () => {
                         </div>
                         <h1>Une journée/ soirée avec Léon</h1>
                         <h2>
-                            Artiste : Léon Chocolate
-                            <br/>
-                            Label : Vaziva Music
-                            <br/>
-                            Sortie : 2012
-                            <br/>
-                            Genre : #Soul
+                        <br/> 
+                        Hello world !!!<br/><br/> 
+                        je peux me produire dans votre établissement 
+                        pour vous apporter en live des good vibes soul-music et des sons hypes des plus tendances.
+                        <br/><br/>
+                        Je vous invite à découvrir une petite sélection de ma playlist, en un clic! 
                         </h2>
+                        <br/>
                         <a className='bonus' href={redirection5}>
                             Extrait video
                             <FontAwesomeIcon className='bonus__arrow' icon={(faArrowRight)} />
