@@ -207,10 +207,10 @@ const Tracks = () => {
                         <h2>
                         <br/> 
                         Hello world !!!<br/><br/> 
-                        je peux me produire dans votre établissement 
+                        Léon peux se produire dans votre établissement 
                         pour vous apporter en live des good vibes soul-music et des sons hypes des plus tendances.
                         <br/><br/>
-                        Je vous invite à découvrir une petite sélection de ma playlist, en un clic! 
+                        Je vous invite à découvrir une petite sélection de sa playlist, en un clic! 
                         </h2>
                         <br/>
                         <a className='bonus' href={redirection5}>
